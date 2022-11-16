@@ -13,6 +13,10 @@ const myData = newArray[2][1];
 const anotherArray = [["John", 23], ["cat", 2]];
 anotherArray.push(["dog", 3]);
 
-const myArray = [["John", 23], ["cat", 2]];
-const removedFromMyArray = myArray.pop();
+//const myArray = [["John", 23], ["cat", 2]];
+//const removedFromMyArray = myArray.pop();
+
+const myArray = [["John", 23], ["dog", 3]];
+const removedFromMyArray = myArray.shift();
+
 
