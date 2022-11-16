@@ -1,5 +1,5 @@
-const myArray = [18, 64, 99];
-myArray[0] = 45;
+// const myArray = [18, 64, 99];
+// myArray[0] = 45;
 
 const newArray = [
     [1, 2, 3],
@@ -12,3 +12,7 @@ const myData = newArray[2][1];
 
 const anotherArray = [["John", 23], ["cat", 2]];
 anotherArray.push(["dog", 3]);
+
+const myArray = [["John", 23], ["cat", 2]];
+const removedFromMyArray = myArray.pop();
+
