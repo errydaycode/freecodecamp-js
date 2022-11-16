@@ -9,3 +9,6 @@ const newArray = [
 ];
 
 const myData = newArray[2][1];
+
+const anotherArray = [["John", 23], ["cat", 2]];
+anotherArray.push(["dog", 3]);
