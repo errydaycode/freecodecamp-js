@@ -46,3 +46,15 @@ function plusThree(num) {
 }
 
 console.log(plusThree(65));
+
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+
+    const outerWear = "sweater";
+
+    return outerWear;
+}
+
+console.log(myOutfit());
+console.log(outerWear);
