@@ -11,3 +11,12 @@ function functionWithArgs(a, b) {
 functionWithArgs(1, 2);
 functionWithArgs(7, 9);
 
+function timesFive(num) {
+    return num * 5;
+}
+
+const answer = timesFive(5)
+
+
+
+
