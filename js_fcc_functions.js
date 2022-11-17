@@ -40,3 +40,9 @@ function unitedStates () {
 
 //console.log(unitedStates());
 console.log(nyc)
+
+function plusThree(num) {
+    return num *= 5
+}
+
+console.log(plusThree(65));
