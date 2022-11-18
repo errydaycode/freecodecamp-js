@@ -47,3 +47,7 @@ const getHiddenCard = (number, x = 4) => {
 };
 
 getHiddenCard('1234567812345678');
+
+const capitalize = (text) => `${text[0].toUpperCase()}${text.slice(1)}`;
+
+console.log(capitalize('petrovich'));
