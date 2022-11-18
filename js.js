@@ -84,3 +84,9 @@ const isLeapYear = (year) => {
 
 console.log(isLeapYear(2016));
 
+const isPalindrome = (word) => {
+    const lowerword = word.toLowerCase();
+    return lowerword === reverse(lowerword);
+};
+
+const isNotPalindrome = (word) => !isPalindrome(word);
