@@ -55,3 +55,9 @@ console.log(capitalize('petrovich'));
 const isPensioner = (age) => age >= 60;
 
 console.log(isPensioner(78));
+
+const isInternationalPhone = (phone) => {
+    const first = phone[0];
+    return first === '+';
+}
+
