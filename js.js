@@ -75,3 +75,12 @@ const isGoodApartment = (area, street) => {
 };
 
 console.log(isGoodApartment(64,'Main Street'));
+
+
+const isLeapYear = (year) => {
+    const result = year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
+    return result;
+};
+
+console.log(isLeapYear(2016));
+
