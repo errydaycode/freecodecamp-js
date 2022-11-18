@@ -40,3 +40,10 @@ myList.unshift(
     ["Vape Liquid", 1 ]
 );
 console.log(myList);
+
+const getHiddenCard = (number, x = 4) => {
+
+    return '*'.repeat(x) + number.slice(12)
+};
+
+getHiddenCard('1234567812345678');
