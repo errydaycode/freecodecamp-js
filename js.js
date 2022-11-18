@@ -51,3 +51,7 @@ getHiddenCard('1234567812345678');
 const capitalize = (text) => `${text[0].toUpperCase()}${text.slice(1)}`;
 
 console.log(capitalize('petrovich'));
+
+const isPensioner = (age) => age >= 60;
+
+console.log(isPensioner(78));
