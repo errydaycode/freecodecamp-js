@@ -67,3 +67,11 @@ const isStrongPassword = (password) => {
 };
 
 isStrongPassword('qwerty');
+
+const isGoodApartment = (area, street) => {
+
+    const result = area >= 100 || (area >= 80 && street === 'Main Street');
+    return result;
+};
+
+console.log(isGoodApartment(64,'Main Street'));
