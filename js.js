@@ -61,3 +61,9 @@ const isInternationalPhone = (phone) => {
     return first === '+';
 }
 
+const isStrongPassword = (password) => {
+    const length = password.length;
+    return length > 8 && length < 20;
+};
+
+isStrongPassword('qwerty');
