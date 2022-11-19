@@ -113,3 +113,21 @@ const normalizeUrl = (site) => {
 
     return normalizedUrl;
 };
+
+
+const whoIsThisHouseToStarks = (surname) => {
+
+    let who;
+
+    if (surname === 'Karstark' || surname ===  'Tally'){
+        who = 'friend';
+    } else if (surname === 'Lannister' || surname ===  'Frey') {
+        who = 'enemy';
+    } else {
+        who = 'neutral';
+    }
+    return who;
+};
+
+
+console.log(whoIsThisHouseToStarks('listopad'));
