@@ -90,3 +90,14 @@ const isPalindrome = (word) => {
 };
 
 const isNotPalindrome = (word) => !isPalindrome(word);
+
+const guessNumber = (guess) => {
+    if (guess === 42) {
+        return 'You win!';
+    }
+
+    return 'Try again!';
+};
+
+
+console.log(guessNumber(41));
