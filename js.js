@@ -145,3 +145,16 @@ const getNumberExplanation = (number) => {
             return null;
     }
 };
+
+const printNumbers = (lastNumber) => {
+
+
+    while (i <= lastNumber) {
+        console.log(i);
+        i = i + 1;
+    }
+    console.log('finished!');
+};
+
+printNumbers(3);
+
