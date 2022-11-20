@@ -158,3 +158,14 @@ const printNumbers = (lastNumber) => {
 
 printNumbers(3);
 
+const multiplyNumbersFromRange =  (start, finish) => {
+    let i = start;
+    let sum = 1;
+
+    while (i<= finish) {
+        sum = sum * i;
+        i = i + 1;
+    }
+    return sum;
+}
+
