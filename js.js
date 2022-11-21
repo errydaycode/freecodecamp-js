@@ -148,6 +148,7 @@ const getNumberExplanation = (number) => {
 
 const printNumbers = (lastNumber) => {
 
+    let i = 1;
 
     while (i <= lastNumber) {
         console.log(i);
