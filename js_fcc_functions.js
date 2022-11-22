@@ -126,3 +126,22 @@ function testLessOrEqual(val) {
 }
 
 testLessOrEqual(10);
+
+function orOperator (num) {
+    if (num > 10 || num < 5) {
+        return "outside 10 and 5";
+    }
+    return "inside 10 and 5";
+};
+
+console.log(orOperator(11));
+
+
+function testLogicalAnd(val) {
+    if (val <= 50 && val>= 25 ) {
+        return "Yes";
+    }
+    return "No";
+};
+
+testLogicalAnd(10);
