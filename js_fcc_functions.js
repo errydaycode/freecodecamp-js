@@ -1,3 +1,4 @@
+/*
 function hello () {
     console.log("Another string");
     return  "Hello functions";
@@ -55,24 +56,36 @@ function myOutfit() {
 
     return outerWear;
 }
+*/
 
-console.log(myOutfit());
-console.log(outerWear);
+//console.log(myOutfit());
+//console.log(outerWear);
 
 // Setup
-let sum = 0;
+//let sum = 0;
 
-function addThree() {
-    sum = sum + 3;
-}
+//function addThree() {
+    //sum = sum + 3;
+//}
 
 // Only change code below this line
 
-function addFive () {
-    sum += 5;
-}
+//function addFive () {
+    //sum += 5;
+//}
 
 // Only change code above this line
 
-console.log(addThree());
-console.log(addFive());
+//console.log(addThree());
+//console.log(addFive());
+
+function isTypeOf(value)  {
+    if(typeof value === 'string'){
+        return 'yes, this is a string'
+    } else if (typeof value === 'number') {
+        return 'this is a number'
+    } else {
+        return 'undefined'
+    }
+};
+console.log(isTypeOf(665));
