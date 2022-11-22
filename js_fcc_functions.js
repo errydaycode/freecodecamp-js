@@ -98,3 +98,31 @@ function testNotEqual(val) {
 }
 
 console.log(testNotEqual(99));
+
+function testGreaterThan(val) {
+    if (val > 100) {
+        return "Over 100";
+    }
+
+    if (val > 10) {
+        return "Over 10";
+    }
+
+    return "10 or Under";
+}
+
+testGreaterThan(10);
+
+function testLessOrEqual(val) {
+    if (val <= 12) {  // Change this line
+        return "Smaller Than or Equal to 12";
+    }
+
+    if (val <= 24) {  // Change this line
+        return "Smaller Than or Equal to 24";
+    }
+
+    return "More Than 24";
+}
+
+testLessOrEqual(10);
