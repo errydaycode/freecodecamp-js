@@ -89,3 +89,12 @@ function isTypeOf(value)  {
     }
 };
 console.log(isTypeOf(665));
+
+function testNotEqual(val) {
+    if (val != 99) { // Change this line
+        return "Not Equal";
+    }
+    return "Equal";
+}
+
+console.log(testNotEqual(99));
