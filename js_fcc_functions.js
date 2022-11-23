@@ -265,3 +265,47 @@ function cc(card) {
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+
+function phoneticLookup(val) {
+//   let result = "";
+//   switch(val) {
+//     case "alpha":
+//       result = "Adams";
+//       break;
+//     case "bravo":
+//       result = "Boston";
+//       break;
+//     case "charlie":
+//       result = "Chicago";
+//       break;
+//     case "delta":
+//       result = "Denver";
+//       break;
+//     case "echo":
+//       result = "Easy";
+//       break;
+//     case "foxtrot":
+//       result = "Frank";
+//       break;
+//       default :
+//         result = "huetasobachayavonuchaya";
+//       break;
+//   }
+
+//   return result;
+// }
+
+// console.log(phoneticLookup("charlie"));
+
+    const lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank"
+    }
+    return lookup[val];
+};
+console.log(phoneticLookup("echo"));
