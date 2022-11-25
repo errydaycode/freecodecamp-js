@@ -427,17 +427,54 @@ console.log(phoneticLookup("echo"));
 //     }
 //
 // ];
+//
+// const myStorage = {
+//     "car": {
+//         "inside": {
+//             "glove box": "maps",
+//             "passenger seat": "crumbs"
+//         },
+//         "outside": {
+//             "trunk": "jack"
+//         }
+//     }
+// };
+//
+// const gloveBoxContents = myStorage.car.inside["glove box"];
+//
+// const myPlants = [
+//     {
+//         type: "flowers",
+//         list: [
+//             "rose",
+//             "tulip",
+//             "dandelion"
+//         ]
+//     },
+//     {
+//         type: "trees",
+//         list: [
+//             "fir",
+//             "pine",
+//             "birch"
+//         ]
+//     }
+// ];
+//
+// const secondTree = myPlants[1].list[1];
 
-const myStorage = {
-    "car": {
-        "inside": {
-            "glove box": "maps",
-            "passenger seat": "crumbs"
-        },
-        "outside": {
-            "trunk": "jack"
-        }
-    }
-};
+const ourArray = [];
+let i = 0;
 
-const gloveBoxContents = myStorage.car.inside["glove box"];
+while (i < 5) {
+    ourArray.push(i);
+    i++;
+}
+
+const myArray = [];
+let i = 5;
+
+while(i >= 0) {
+    myArray.push(i);
+    i--;
+}
