@@ -463,18 +463,29 @@ console.log(phoneticLookup("echo"));
 //
 // const secondTree = myPlants[1].list[1];
 
-const ourArray = [];
-let i = 0;
+// const ourArray = [];
+// let i = 0;
+//
+// while (i < 5) {
+//     ourArray.push(i);
+//     i++;
+// }
+//
+// const myArray = [];
+// let i = 5;
+//
+// while(i >= 0) {
+//     myArray.push(i);
+//     i--;
+// }
 
-while (i < 5) {
+const ourArray = [];
+
+for (let i = 0; i < 5; i++) {
     ourArray.push(i);
-    i++;
 }
 
 const myArray = [];
-let i = 5;
-
-while(i >= 0) {
+for (let i = 1; i <= 5; i++) {
     myArray.push(i);
-    i--;
 }
