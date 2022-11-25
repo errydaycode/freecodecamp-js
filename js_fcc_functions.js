@@ -402,28 +402,42 @@ console.log(phoneticLookup("echo"));
 // }
 //
 // phoneticLookup("charlie");
+//
+// const myMusic = [
+//     {
+//         "artist": "Billy Joel",
+//         "title": "Piano Man",
+//         "release_year": 1973,
+//         "formats": [
+//             "CD",
+//             "8T",
+//             "LP"
+//         ],
+//         "gold": true
+//     },
+//     {
+//         "artist": "Miyagi",
+//         "title": "Captain",
+//         "release_year" : 2018,
+//         "formats": [
+//             "CD",
+//             "mp3",
+//             "vynil"
+//         ]
+//     }
+//
+// ];
 
-const myMusic = [
-    {
-        "artist": "Billy Joel",
-        "title": "Piano Man",
-        "release_year": 1973,
-        "formats": [
-            "CD",
-            "8T",
-            "LP"
-        ],
-        "gold": true
-    },
-    {
-        "artist": "Miyagi",
-        "title": "Captain",
-        "release_year" : 2018,
-        "formats": [
-            "CD",
-            "mp3",
-            "vynil"
-        ]
+const myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
     }
+};
 
-];
+const gloveBoxContents = myStorage.car.inside["glove box"];
