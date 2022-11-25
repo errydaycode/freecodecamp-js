@@ -330,15 +330,35 @@ const testObj = {
 };
 
 
-const hatValue = testObj.hat ;
-const shirtValue = testObj.shirt;
+// const hatValue = testObj.hat ;
+// const shirtValue = testObj.shirt;
+//
+// const testObj = {
+//     "an entree": "hamburger",
+//     "my side": "veggies",
+//     "the drink": "water"
+// };
+//
+//
+// const entreeValue = testObj["an entree"]
+// const drinkValue = testObj["the drink"]
 
-const testObj = {
-    "an entree": "hamburger",
-    "my side": "veggies",
-    "the drink": "water"
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+};
+
+myDog["bark"] = "woof";
+
+const myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
 };
 
 
-const entreeValue = testObj["an entree"]
-const drinkValue = testObj["the drink"]
+delete myDog.tails;
