@@ -267,7 +267,7 @@ function cc(card) {
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 
 
-function phoneticLookup(val) {
+//function phoneticLookup(val) {
 //   let result = "";
 //   switch(val) {
 //     case "alpha":
@@ -298,7 +298,7 @@ function phoneticLookup(val) {
 
 // console.log(phoneticLookup("charlie"));
 
-    const lookup = {
+  /*  const lookup = {
         "alpha": "Adams",
         "bravo": "Boston",
         "charlie": "Chicago",
@@ -309,3 +309,16 @@ function phoneticLookup(val) {
     return lookup[val];
 };
 console.log(phoneticLookup("echo"));
+
+   */
+
+
+const myDog = {
+
+    "name": "Whiskers",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["Water", "Dogs"]
+
+
+};
