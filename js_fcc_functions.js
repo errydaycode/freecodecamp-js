@@ -322,83 +322,108 @@ console.log(phoneticLookup("echo"));
 //
 //
 // };
-
-const testObj = {
-    "hat": "ballcap",
-    "shirt": "jersey",
-    "shoes": "cleats"
-};
-
-
-// const hatValue = testObj.hat ;
-// const shirtValue = testObj.shirt;
 //
 // const testObj = {
-//     "an entree": "hamburger",
-//     "my side": "veggies",
-//     "the drink": "water"
+//     "hat": "ballcap",
+//     "shirt": "jersey",
+//     "shoes": "cleats"
 // };
 //
 //
-// const entreeValue = testObj["an entree"]
-// const drinkValue = testObj["the drink"]
+// // const hatValue = testObj.hat ;
+// // const shirtValue = testObj.shirt;
+// //
+// // const testObj = {
+// //     "an entree": "hamburger",
+// //     "my side": "veggies",
+// //     "the drink": "water"
+// // };
+// //
+// //
+// // const entreeValue = testObj["an entree"]
+// // const drinkValue = testObj["the drink"]
+//
+// const myDog = {
+//     "name": "Happy Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"]
+// };
+//
+// myDog["bark"] = "woof";
+//
+// const myDog = {
+//     "name": "Happy Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["freeCodeCamp Campers"],
+//     "bark": "woof"
+// };
+//
+//
+// delete myDog.tails;
+//
+//
+// function phoneticLookup(val) {
+//     let result = "";
+//
+//
+//     // switch(val) {
+//     //   case "alpha":
+//     //     result = "Adams";
+//     //     break;
+//     //   case "bravo":
+//     //     result = "Boston";
+//     //     break;
+//     //   case "charlie":
+//     //     result = "Chicago";
+//     //     break;
+//     //   case "delta":
+//     //     result = "Denver";
+//     //     break;
+//     //   case "echo":
+//     //     result = "Easy";
+//     //     break;
+//     //   case "foxtrot":
+//     //     result = "Frank";
+//     // }
+//
+//     const lookup = {
+//         "alpha": "Adams",
+//         "bravo": "Boston",
+//         "charlie": "Chicago",
+//         "delta": "Denver",
+//         "echo": "Easy",
+//         "foxtrot": "Frank"
+//     }
+//     result = lookup[val];
+//
+//     return result;
+// }
+//
+// phoneticLookup("charlie");
 
-const myDog = {
-    "name": "Happy Coder",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["freeCodeCamp Campers"]
-};
-
-myDog["bark"] = "woof";
-
-const myDog = {
-    "name": "Happy Coder",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["freeCodeCamp Campers"],
-    "bark": "woof"
-};
-
-
-delete myDog.tails;
-
-
-function phoneticLookup(val) {
-    let result = "";
-
-
-    // switch(val) {
-    //   case "alpha":
-    //     result = "Adams";
-    //     break;
-    //   case "bravo":
-    //     result = "Boston";
-    //     break;
-    //   case "charlie":
-    //     result = "Chicago";
-    //     break;
-    //   case "delta":
-    //     result = "Denver";
-    //     break;
-    //   case "echo":
-    //     result = "Easy";
-    //     break;
-    //   case "foxtrot":
-    //     result = "Frank";
-    // }
-
-    const lookup = {
-        "alpha": "Adams",
-        "bravo": "Boston",
-        "charlie": "Chicago",
-        "delta": "Denver",
-        "echo": "Easy",
-        "foxtrot": "Frank"
+const myMusic = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    },
+    {
+        "artist": "Miyagi",
+        "title": "Captain",
+        "release_year" : 2018,
+        "formats": [
+            "CD",
+            "mp3",
+            "vynil"
+        ]
     }
-    result = lookup[val];
 
-    return result;
-}
-
-phoneticLookup("charlie");
+];
