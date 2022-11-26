@@ -501,9 +501,14 @@ console.log(phoneticLookup("echo"));
 //     myArray.push(i);
 // }
 
-const myArr = [2, 3, 4, 5, 6];
-let total = 0;
-for (let i = 0; i < myArr.length; i++) {
-    total += myArr[i];
-}
 
+const myArray = [];
+let i = 10;
+
+
+do {
+    myArray.push(i);
+    i++;
+} while (i < 5);
+
+console.log(myArray)
