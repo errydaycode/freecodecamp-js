@@ -490,13 +490,20 @@ console.log(phoneticLookup("echo"));
 //     myArray.push(i);
 // }
 
-const ourArray = [];
+// const ourArray = [];
+//
+// for (let i = 0; i < 10; i += 2) {
+//     ourArray.push(i);
+// }
+//
+// const myArray = [];
+// for (let i = 1; i <= 9; i += 2) {
+//     myArray.push(i);
+// }
 
-for (let i = 0; i < 10; i += 2) {
-    ourArray.push(i);
+const myArr = [2, 3, 4, 5, 6];
+let total = 0;
+for (let i = 0; i < myArr.length; i++) {
+    total += myArr[i];
 }
 
-const myArray = [];
-for (let i = 1; i <= 9; i += 2) {
-    myArray.push(i);
-}
