@@ -502,13 +502,22 @@ console.log(phoneticLookup("echo"));
 // }
 
 
-const myArray = [];
-let i = 10;
+// const myArray = [];
+// let i = 10;
+//
+//
+// do {
+//     myArray.push(i);
+//     i++;
+// } while (i < 5);
+//
+// console.log(myArray)
+let t = 0;
 
+function f1 () {
+    t++;
+    console.log(t);
+    f1()
+}
 
-do {
-    myArray.push(i);
-    i++;
-} while (i < 5);
-
-console.log(myArray)
+f1();
