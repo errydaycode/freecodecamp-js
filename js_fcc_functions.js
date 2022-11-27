@@ -512,12 +512,37 @@ console.log(phoneticLookup("echo"));
 // } while (i < 5);
 //
 // console.log(myArray)
-let t = 0;
+// let t = 0;
+//
+// function f1 () {
+//     t++;
+//     console.log(t);
+//     f1()
+// }
+//
+// f1();
 
-function f1 () {
-    t++;
-    console.log(t);
-    f1()
+
+// // цикл
+function f2 () {
+    let out = ' ';
+    for (i = 1; i <= 30; i++){
+        out += i + ' ';
+    }
+    console.log(out);
 }
 
-f1();
+f2()
+
+// рекурсия
+let i = 0;
+let out = ' ';
+function f3() {
+    i++;
+    out += i + ' ';
+    if (i >= 30) return;
+    f3();
+}
+
+f3();
+console.log(out);
