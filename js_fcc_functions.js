@@ -524,25 +524,42 @@ console.log(phoneticLookup("echo"));
 
 
 // // цикл
-function f2 () {
-    let out = ' ';
-    for (i = 1; i <= 30; i++){
-        out += i + ' ';
-    }
-    console.log(out);
+// function f2 () {
+//     let out = ' ';
+//     for (i = 1; i <= 30; i++){
+//         out += i + ' ';
+//     }
+//     console.log(out);
+// }
+//
+// f2()
+//
+// // рекурсия
+// let i = 0;
+// let out = ' ';
+// function f3() {
+//     i++;
+//     out += i + ' ';
+//     if (i >= 30) return;
+//     f3();
+// }
+//
+// f3();
+// console.log(out);
+
+function randomInteger(min, max) {
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
 }
 
-f2()
-
-// рекурсия
-let i = 0;
-let out = ' ';
-function f3() {
-    i++;
-    out += i + ' ';
-    if (i >= 30) return;
-    f3();
+let s1 = 0;
+function moneyRecursion () {
+    let m = randomInteger(0, 100);
+    console.log('add:' + m);
+    s1 += m;
+    console.log('sum:' + s1);
+    if (s1 > 300) return;
+    moneyRecursion();
 }
 
-f3();
-console.log(out);
+moneyRecursion();
