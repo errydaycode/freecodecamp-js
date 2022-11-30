@@ -6,8 +6,14 @@
 // let petRegex = /dog|cat|bird|fish/; // Change this line
 // let result = petRegex.test(petString);
 
-let myString = "freeCodeCamp";
-let fccRegex = /freecodecamp/i; // Change this line
-let result = fccRegex.test(myString);
+// let myString = "freeCodeCamp";
+// // let fccRegex = /freecodecamp/i; // Change this line
+// // let result = fccRegex.test(myString);
+// //
+// // console.log(result)
 
-console.log(result)
+let humStr = "I'll hum a song";
+let hugStr = "Bear hug";
+let huRegex = /hu./;
+huRegex.test(humStr);
+huRegex.test(hugStr);
