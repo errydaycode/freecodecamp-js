@@ -28,11 +28,19 @@
 // bugStr.match(bgRegex);
 // bogStr.match(bgRegex);
 
+//
+// let caboose = "The last car on a train is the caboose";
+// let lastRegex = /caboose$/;
+// let result = lastRegex.test(caboose);
+//
+// let rickyAndCal = "Cal and Ricky both like racing.";
+// let calRegex = /^Cal/;
+// let result = calRegex.test(rickyAndCal);
 
-let caboose = "The last car on a train is the caboose";
-let lastRegex = /caboose$/; // Change this line
-let result = lastRegex.test(caboose);
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;
 
-let rickyAndCal = "Cal and Ricky both like racing.";
-let calRegex = /^Cal/; // Change this line
-let result = calRegex.test(rickyAndCal);
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g;
+let result = quoteSample.match(nonAlphabetRegex).length;
