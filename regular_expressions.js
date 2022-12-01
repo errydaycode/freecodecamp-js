@@ -37,10 +37,14 @@
 // let calRegex = /^Cal/;
 // let result = calRegex.test(rickyAndCal);
 
-let quoteSample = "The five boxing wizards jump quickly.";
-let alphabetRegexV2 = /\w/g; // Change this line
-let result = quoteSample.match(alphabetRegexV2).length;
+// let quoteSample = "The five boxing wizards jump quickly.";
+// let alphabetRegexV2 = /\w/g; // Change this line
+// let result = quoteSample.match(alphabetRegexV2).length;
+//
+// let quoteSample = "The five boxing wizards jump quickly.";
+// let nonAlphabetRegex = /\W/g;
+// let result = quoteSample.match(nonAlphabetRegex).length;
 
-let quoteSample = "The five boxing wizards jump quickly.";
-let nonAlphabetRegex = /\W/g;
-let result = quoteSample.match(nonAlphabetRegex).length;
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z]([a-z]+\d*|[\d][\d])$/ig;
+let result = userCheck.test(username);
