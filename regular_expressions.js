@@ -49,8 +49,12 @@
 // let userCheck = /^[a-z]([a-z]+\d*|[\d][\d])$/ig;
 // let result = userCheck.test(username);
 
-let american = "color";
-let british = "colour";
-let rainbowRegex= /colou?r/;
-rainbowRegex.test(american);
-rainbowRegex.test(british);
+// let american = "color";
+// let british = "colour";
+// let rainbowRegex= /colou?r/;
+// rainbowRegex.test(american);
+// rainbowRegex.test(british);
+
+let sampleWord = "astronaut";
+let pwRegex =/(?=\w{6})(?=\w*\d{2})/;;
+let result = pwRegex.test(sampleWord);
