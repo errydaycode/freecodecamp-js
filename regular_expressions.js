@@ -18,12 +18,21 @@
 // huRegex.test(humStr);
 // huRegex.test(hugStr);
 
-let bigStr = "big";
-let bagStr = "bag";
-let bugStr = "bug";
-let bogStr = "bog";
-let bgRegex = /b[aiu]g/;
-bigStr.match(bgRegex);
-bagStr.match(bgRegex);
-bugStr.match(bgRegex);
-bogStr.match(bgRegex);
+// let bigStr = "big";
+// let bagStr = "bag";
+// let bugStr = "bug";
+// let bogStr = "bog";
+// let bgRegex = /b[aiu]g/;
+// bigStr.match(bgRegex);
+// bagStr.match(bgRegex);
+// bugStr.match(bgRegex);
+// bogStr.match(bgRegex);
+
+
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose);
+
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
