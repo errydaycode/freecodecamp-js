@@ -58,8 +58,12 @@
 // let sampleWord = "astronaut";
 // let pwRegex =/(?=\w{6})(?=\w*\d{2})/;;
 // let result = pwRegex.test(sampleWord);
+//
+// let password = "abc123";
+// let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+// checkPass.test(password);
 
-let password = "abc123";
-let checkPass = /(?=\w{3,6})(?=\D*\d)/;
-checkPass.test(password);
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1$/;
+let result = reRegex.test(repeatNum);
 
