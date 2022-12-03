@@ -62,8 +62,13 @@
 // let password = "abc123";
 // let checkPass = /(?=\w{3,6})(?=\D*\d)/;
 // checkPass.test(password);
+//
+// let repeatNum = "42 42 42";
+// let reRegex = /^(\d+) \1 \1$/;
+// let result = reRegex.test(repeatNum);
 
-let repeatNum = "42 42 42";
-let reRegex = /^(\d+) \1 \1$/;
-let result = reRegex.test(repeatNum);
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/;
+let replaceText = "$3 $2 $1";
+let result = str.replace(fixRegex, replaceText );
 
