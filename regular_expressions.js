@@ -54,7 +54,12 @@
 // let rainbowRegex= /colou?r/;
 // rainbowRegex.test(american);
 // rainbowRegex.test(british);
+//
+// let sampleWord = "astronaut";
+// let pwRegex =/(?=\w{6})(?=\w*\d{2})/;;
+// let result = pwRegex.test(sampleWord);
 
-let sampleWord = "astronaut";
-let pwRegex =/(?=\w{6})(?=\w*\d{2})/;;
-let result = pwRegex.test(sampleWord);
+let password = "abc123";
+let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+checkPass.test(password);
+
