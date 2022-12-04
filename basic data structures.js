@@ -63,11 +63,18 @@
 // }
 //
 // console.log(copyMachine([true, false, true], 2));
+//
+// function spreadOut() {
+//     let fragment = ['to', 'code'];
+//     let sentence = ['learning', ...fragment, 'is', 'fun'];
+//     return sentence;
+// }
+//
+// console.log(spreadOut());
 
-function spreadOut() {
-    let fragment = ['to', 'code'];
-    let sentence = ['learning', ...fragment, 'is', 'fun'];
-    return sentence;
-}
-
-console.log(spreadOut());
+function quickCheck(arr, elem) {
+    if (arr.indexOf(elem) != -1) {
+        return true
+    } else return false
+};
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
