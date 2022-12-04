@@ -42,24 +42,32 @@
 // const amountToDelete = 2;
 //
 // numbers.splice(startIndex, amountToDelete, 13, 14, 15, 16, 17, 18, 19, 20, 'etc');
-// console.log(numbers);
+// // console.log(numbers);
+//
+// function forecast(arr) {
+//
+//     let weather = arr.slice(2,4)
+//     return weather;
+// }
+// console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+//
+// function copyMachine(arr, num) {
+//     let newArr = [];
+//     while (num >= 1) {
+//         // Only change code below this line
+//         newArr.push([...arr])
+//         // Only change code above this line
+//         num--;
+//     }
+//     return newArr;
+// }
+//
+// console.log(copyMachine([true, false, true], 2));
 
-function forecast(arr) {
-
-    let weather = arr.slice(2,4)
-    return weather;
+function spreadOut() {
+    let fragment = ['to', 'code'];
+    let sentence = ['learning', ...fragment, 'is', 'fun'];
+    return sentence;
 }
-console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 
-function copyMachine(arr, num) {
-    let newArr = [];
-    while (num >= 1) {
-        // Only change code below this line
-        newArr.push([...arr])
-        // Only change code above this line
-        num--;
-    }
-    return newArr;
-}
-
-console.log(copyMachine([true, false, true], 2));
+console.log(spreadOut());
