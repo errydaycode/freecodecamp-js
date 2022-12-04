@@ -36,10 +36,17 @@
 // arr.splice(0,1);
 // arr.splice(3,4);
 // console.log(arr);
+//
+// const numbers = [10, 11, 12, 12, 15];
+// const startIndex = 3;
+// const amountToDelete = 2;
+//
+// numbers.splice(startIndex, amountToDelete, 13, 14, 15, 16, 17, 18, 19, 20, 'etc');
+// console.log(numbers);
 
-const numbers = [10, 11, 12, 12, 15];
-const startIndex = 3;
-const amountToDelete = 2;
+function forecast(arr) {
 
-numbers.splice(startIndex, amountToDelete, 13, 14, 15, 16, 17, 18, 19, 20, 'etc');
-console.log(numbers);
+    let weather = arr.slice(2,4)
+    return weather;
+}
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
