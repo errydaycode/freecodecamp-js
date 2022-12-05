@@ -89,3 +89,21 @@ function filteredArray(arr, elem) {
     return newArr;
 }
 console.log(filteredArray([["trumpets", 2], ["flutes", 4], ["saxophones", 2]], 2));
+
+let myNestedArray = [
+
+    ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+
+    [
+        ['loop', 'deep', 6, 7, 1000, 'method']
+    ],
+    [
+        [
+            ['concat', false, true, 'deeper', 'array'],
+        ],
+        [
+            [   ['mutate', 1327.98, 'deepest', 'slice', 'push'] ]
+        ]
+    ]
+
+];
