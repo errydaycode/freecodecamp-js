@@ -107,32 +107,59 @@
 //     ]
 //
 // ];
+//
+// const tekkenCharacter = {
+//     player: 'Hwoarang',
+//     fightingStyle: 'Tae Kwon Doe',
+//     human: true
+// };
+//
+// tekkenCharacter.origin = 'South Korea';
+// tekkenCharacter['hair color'] = 'dyed orange';
+//
+// const eyes = 'eye color';
+// tekkenCharacter[eyes] = 'brown';
+//
+//
+// let nestedObject = {
+//     id: 28802695164,
+//     date: 'December 31, 2016',
+//     data: {
+//         totalUsers: 99,
+//         online: 80,
+//         onlineStatus: {
+//             active: 67,
+//             away: 13,
+//             busy: 8
+//         }
+//     }
+// }
+//
+// nestedObject.data.onlineStatus.busy = 10;
 
-const tekkenCharacter = {
-    player: 'Hwoarang',
-    fightingStyle: 'Tae Kwon Doe',
-    human: true
-};
-
-tekkenCharacter.origin = 'South Korea';
-tekkenCharacter['hair color'] = 'dyed orange';
-
-const eyes = 'eye color';
-tekkenCharacter[eyes] = 'brown';
-
-
-let nestedObject = {
-    id: 28802695164,
-    date: 'December 31, 2016',
-    data: {
-        totalUsers: 99,
-        online: 80,
-        onlineStatus: {
-            active: 67,
-            away: 13,
-            busy: 8
-        }
+const users = {
+    Alan: {
+        online: false
+    },
+    Jeff: {
+        online: true
+    },
+    Sarah: {
+        online: false
     }
 }
 
-nestedObject.data.onlineStatus.busy = 10;
+function countOnline(usersObj) {
+
+    let onlineUsers = 0;
+    for (let user in usersObj) {
+        let onlineStatus = usersObj[user]["online"]
+        if (onlineStatus) {
+            onlineUsers += 1;
+        }
+    }
+    return onlineUsers;
+
+}
+
+console.log(countOnline(users));
