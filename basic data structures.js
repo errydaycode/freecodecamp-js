@@ -79,31 +79,43 @@
 // };
 // console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
-function filteredArray(arr, elem) {
-    let newArr = [];
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i].indexOf(elem)=== -1) {
-            newArr.push(arr[i])
-        }
-    }
-    return newArr;
-}
-console.log(filteredArray([["trumpets", 2], ["flutes", 4], ["saxophones", 2]], 2));
+// function filteredArray(arr, elem) {
+//     let newArr = [];
+//     for(let i = 0; i < arr.length; i++) {
+//         if(arr[i].indexOf(elem)=== -1) {
+//             newArr.push(arr[i])
+//         }
+//     }
+//     return newArr;
+// }
+// console.log(filteredArray([["trumpets", 2], ["flutes", 4], ["saxophones", 2]], 2));
+//
+// let myNestedArray = [
+//
+//     ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+//
+//     [
+//         ['loop', 'deep', 6, 7, 1000, 'method']
+//     ],
+//     [
+//         [
+//             ['concat', false, true, 'deeper', 'array'],
+//         ],
+//         [
+//             [   ['mutate', 1327.98, 'deepest', 'slice', 'push'] ]
+//         ]
+//     ]
+//
+// ];
 
-let myNestedArray = [
+const tekkenCharacter = {
+    player: 'Hwoarang',
+    fightingStyle: 'Tae Kwon Doe',
+    human: true
+};
 
-    ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+tekkenCharacter.origin = 'South Korea';
+tekkenCharacter['hair color'] = 'dyed orange';
 
-    [
-        ['loop', 'deep', 6, 7, 1000, 'method']
-    ],
-    [
-        [
-            ['concat', false, true, 'deeper', 'array'],
-        ],
-        [
-            [   ['mutate', 1327.98, 'deepest', 'slice', 'push'] ]
-        ]
-    ]
-
-];
+const eyes = 'eye color';
+tekkenCharacter[eyes] = 'brown';
