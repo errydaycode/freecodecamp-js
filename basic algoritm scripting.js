@@ -21,3 +21,11 @@ function factorialize(num) {
 }
 
 console.log(factorialize(5));
+
+// Vowel count
+
+function getCount(str) {
+    let vowelRegex = /[aeiou]/ig;
+    let result = str.match(vowelRegex);
+    return result?.length || 0 ;
+};
