@@ -137,29 +137,29 @@
 //
 // nestedObject.data.onlineStatus.busy = 10;
 
-const users = {
-    Alan: {
-        online: false
-    },
-    Jeff: {
-        online: true
-    },
-    Sarah: {
-        online: false
-    }
-}
-
-function countOnline(usersObj) {
-
-    let onlineUsers = 0;
-    for (let user in usersObj) {
-        let onlineStatus = usersObj[user]["online"]
-        if (onlineStatus) {
-            onlineUsers += 1;
-        }
-    }
-    return onlineUsers;
-
-}
-
-console.log(countOnline(users));
+// const users = {
+//     Alan: {
+//         online: false
+//     },
+//     Jeff: {
+//         online: true
+//     },
+//     Sarah: {
+//         online: false
+//     }
+// }
+//
+// function countOnline(usersObj) {
+//
+//     let onlineUsers = 0;
+//     for (let user in usersObj) {
+//         let onlineStatus = usersObj[user]["online"]
+//         if (onlineStatus) {
+//             onlineUsers += 1;
+//         }
+//     }
+//     return onlineUsers;
+//
+// }
+//
+// console.log(countOnline(users));
