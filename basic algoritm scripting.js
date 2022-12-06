@@ -8,6 +8,16 @@ function convertCtoF(celsius) {
 convertCtoF(30);
 
 // Reverse a string
-function solution(str){
-    return str.split("").reverse().join("")
+const reverseString = (str) => str.split('').reverse().join('');
+
+// Factorialize a Number
+function factorialize(num) {
+    let factorial = 1;
+    while (num > 0) {
+        factorial *= num;
+        num --
+    }
+    return factorial;
 }
+
+console.log(factorialize(5));
