@@ -56,7 +56,7 @@ function findShort(s){
     }
     return smallest.length;
 }
-
+//Codewars 8kuy task
 function grabDoll(dolls){
     var bag=[];
     for (let i = 0; i < dolls.length; i++) {
@@ -66,4 +66,21 @@ function grabDoll(dolls){
         if (bag.length === 3) break;
     }
     return bag;
+}
+// Find the largest number in array;
+function largestOfFour(arr) {
+    let results = [];
+    for (let i = 0; i < arr.length; i++) {
+        let individualArr = arr[i];
+        let innerMax = -Infinity;
+        for (let j = 0; j < individualArr.length; j++){
+            if(innerMax < individualArr[j]) {
+                innerMax = individualArr[j]
+            }
+        }
+        results.push(innerMax);
+        console.log(results)
+
+    }
+    return results;
 }
