@@ -90,3 +90,14 @@ function confirmEnding(str, target) {
 }
 
 confirmEnding("Open sesame", "same");
+
+// Repeat a string repeat a string
+function repeatStringNumTimes(str, num) {
+    let result = "";
+    for (let i = 0; i < num; i++) {
+        result += str;
+    }
+    return result;
+}
+
+repeatStringNumTimes("*", 8);
