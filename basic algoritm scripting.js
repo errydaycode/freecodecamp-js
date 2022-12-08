@@ -84,3 +84,9 @@ function largestOfFour(arr) {
     }
     return results;
 }
+// Confirm the ending
+function confirmEnding(str, target) {
+    return str.slice(str.length - target.length) === target
+}
+
+confirmEnding("Open sesame", "same");
