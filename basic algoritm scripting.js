@@ -124,3 +124,8 @@ function findElement(arr, func) {
 }
 
 findElement([1, 2, 3, 4], num => num % 2 === 0);
+
+
+// BooWho FCC
+const booWho = bool => typeof(bool) === "boolean" ? true : false;
+console.log(booWho(false));
