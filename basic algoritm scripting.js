@@ -143,18 +143,29 @@ console.log(titleCase("I'm a little tea pot"));
 
 // Falsy Bouncer
 function bouncer(arr) {
-    let result = [];
-    for (let elem of arr) {
-        if (elem) result.push(elem);
-    }
-    return result;
-
+    return arr.filter(function(elem){
+        return elem;
+    })
 }
 
 bouncer([7, "ate", "", false, 9]);
+
+
 
 // Slice & splice
 function frankenSplice(arr1, arr2, n) {
     return [...arr2.slice(0, n), ...arr1, ...arr2.slice(n)];
 }
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+// Where do I Belong;
+
+function getIndexToIns(arr, num) {
+    arr.push(num);
+    arr.sort(function(a, b){
+        return a - b;
+    })
+    return arr.indexOf(num);
+}
+
+getIndexToIns([40, 60], 50);
