@@ -129,3 +129,14 @@ findElement([1, 2, 3, 4], num => num % 2 === 0);
 // BooWho FCC
 const booWho = bool => typeof(bool) === "boolean" ? true : false;
 console.log(booWho(false));
+
+// Title Case a Sentence
+function titleCase(str) {
+    let words = str.toLowerCase().split(" ")
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1)
+    }
+    return words.join(" ");
+}
+
+console.log(titleCase("I'm a little tea pot"));
