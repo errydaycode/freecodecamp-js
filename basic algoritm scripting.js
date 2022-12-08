@@ -101,3 +101,10 @@ function repeatStringNumTimes(str, num) {
 }
 
 repeatStringNumTimes("*", 8);
+
+// Truncate a string
+function truncateString(str, num) {
+    if (num >= str.length) return str;
+
+    return str.slice(0, num) + "...";
+}
