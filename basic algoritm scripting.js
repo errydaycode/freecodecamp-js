@@ -141,6 +141,18 @@ function titleCase(str) {
 
 console.log(titleCase("I'm a little tea pot"));
 
+// Falsy Bouncer
+function bouncer(arr) {
+    let result = [];
+    for (let elem of arr) {
+        if (elem) result.push(elem);
+    }
+    return result;
+
+}
+
+bouncer([7, "ate", "", false, 9]);
+
 // Slice & splice
 function frankenSplice(arr1, arr2, n) {
     return [...arr2.slice(0, n), ...arr1, ...arr2.slice(n)];
