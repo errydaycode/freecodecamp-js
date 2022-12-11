@@ -17,3 +17,7 @@ const people = [
 
 // For Each
 // people.forEach(person => console.log(person));
+
+// Map
+
+const newPeople = people.map(person => `${person.name} (${person.age})`);
