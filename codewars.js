@@ -23,3 +23,13 @@ function calculate(num1, operation, num2) {
     if (result === -Infinity) return null;
     return result
 }
+
+// 8 kyu BMI Calculator
+function bmi(weight, height) {
+    let h = Math.pow(height, 2)
+    let result = weight / h;
+    if (result <= 18.5) return "Underweight"
+    if (result <= 25.0) return "Normal"
+    if (result <= 30.0) return "Overweight"
+    if (result > 30) return "Obese"
+}
