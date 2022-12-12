@@ -37,7 +37,20 @@ dog.sayLegs();
 
 // Define a Constructor Function
 function Dog() {
-    this.name = "Rich";
+    this.name = "Richi";
     this.color = "White";
     this.numLegs = 4;
 }
+// Use a Constructor to Create Objects
+let hound = new Dog()
+
+// extend constructors to receive arguments
+function Dog(name, color) {
+    this.name = name;
+    this.color = color;
+    this.numLegs = 4;
+}
+
+let terrier = new Dog("Alfa", "Red");
+
+// Verify an Object's Constructor with instanceof
