@@ -51,3 +51,6 @@ function findNeedle(haystack) {
 // 8 kyu fake binary
 const fakeBin = x => x.split('').map(e => (e < 5 ? '0' : '1')).join('') ;
 
+// 8 kyu
+
+const hero = (bullets, dragons) => bullets / dragons >= 2 ? true : false
