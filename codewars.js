@@ -40,3 +40,10 @@ function bmi(weight, height) {
         return flower1 % 2 !== flower2 % 2;
     }
 }
+
+ // 8 kyu
+// A Needle in the Haystack
+
+function findNeedle(haystack) {
+    return "found the needle at position " + haystack.indexOf("needle");
+}
