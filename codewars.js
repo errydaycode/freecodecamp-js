@@ -36,14 +36,18 @@ function bmi(weight, height) {
 
 
     // 8 kyu
+
     function lovefunc(flower1, flower2){
         return flower1 % 2 !== flower2 % 2;
     }
 }
 
- // 8 kyu
-// A Needle in the Haystack
+ // 8 kyu a needle in the Haystack
 
 function findNeedle(haystack) {
     return "found the needle at position " + haystack.indexOf("needle");
 }
+
+// 8 kyu fake binary
+const fakeBin = x => x.split('').map(e => (e < 5 ? '0' : '1')).join('') ;
+
