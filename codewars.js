@@ -54,3 +54,27 @@ const fakeBin = x => x.split('').map(e => (e < 5 ? '0' : '1')).join('') ;
 // 8 kyu
 
 const hero = (bullets, dragons) => bullets / dragons >= 2 ? true : false
+
+
+
+// 7 kyu descending order
+
+// Your task is to make a function that can take any non-negative integer as an argument and return it
+// with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+// Examples:
+// Input: 42145 Output: 54421
+//
+// Input: 145263 Output: 654321
+//
+// Input: 123456789 Output: 987654321
+
+const descendingOrder = n =>
+    Number(String(n).split('').sort((a,b) => b - a ).join(''))
+
+// 7 kyu Highest and Lowestфвв
+function highAndLow(numbers){
+    let nums = numbers.split(' ')
+    return Math.max(...nums) + ' ' + Math.min(...nums);
+}
+
+
