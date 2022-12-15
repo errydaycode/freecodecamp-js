@@ -85,5 +85,14 @@ String.prototype.toJadenCase = function (str) {
 
 };
 
-
+// 7 kuy kata
+function friend(friends){
+    let result = [];
+    for (let i of friends) {
+        if (i.length === 4) {
+            result.push(i);
+        }
+    }
+    return result;
+}
 
