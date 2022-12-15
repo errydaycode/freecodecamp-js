@@ -96,3 +96,8 @@ function friend(friends){
     return result;
 }
 
+// 7 kuy kata
+function filter_list(l) {
+    return l.filter(v => typeof v == "number")
+}
+
