@@ -71,10 +71,19 @@ const hero = (bullets, dragons) => bullets / dragons >= 2 ? true : false
 const descendingOrder = n =>
     Number(String(n).split('').sort((a,b) => b - a ).join(''))
 
-// 7 kyu Highest and Lowestфвв
+// 7 kyu Highest and Lowest
 function highAndLow(numbers){
     let nums = numbers.split(' ')
     return Math.max(...nums) + ' ' + Math.min(...nums);
 }
+// 7 kuy kata
+String.prototype.toJadenCase = function (str) {
+    return this.
+    split(' ').
+    map(word => word[0].toUpperCase() + word.slice(1)).
+    join(' ')
+
+};
+
 
 
