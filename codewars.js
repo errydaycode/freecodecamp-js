@@ -113,4 +113,8 @@ function doubleChar(str) {
     return str.split('').map(e => e+e ).join('')
 }
 
+// 7 kuy
+
+const stray = (numbers,sort = numbers.sort()) =>
+    sort[0] == sort[1] ? sort[sort.length - 1] : sort[0]
 
