@@ -101,3 +101,16 @@ function filter_list(l) {
     return l.filter(v => typeof v == "number")
 }
 
+// 8 kuy Abbreviate a Two Word Name
+
+const abbrevName = name => name.toUpperCase().split(' ').map(x => x[0]).join('.')
+
+// 8 kuy kata Double Char
+
+// "abcd" return "aabbccdd"
+
+function doubleChar(str) {
+    return str.split('').map(e => e+e ).join('')
+}
+
+
